@@ -16,8 +16,6 @@ This is a solution to the [Contact form challenge on Frontend Mentor](https://ww
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -35,15 +33,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+Desktop:
+<img width="1920" height="839" alt="chrome_zHv7Y65WRw" src="https://github.com/user-attachments/assets/fee34c56-9e3f-44fe-8bf4-af8c78408593" />
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+Mobile:
+<img width="375" height="824" alt="chrome_9zUzzWR80k" src="https://github.com/user-attachments/assets/467699c3-3248-419d-af76-60bde73ca2e4" />
 
 ### Links
 
@@ -57,61 +52,34 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Russian:
+> Я научился работать с тегаи form, input, label, textarea и их стилизацией. Для гибкости страницы я использовал Flexbox, что позволило мне сделать хороший адаптив под телефон. Но были такие проблемы:
+> - Из-за ограниченной стилизации inputов с типом 'radio' было сложно реализовать функциональный закрашенный зелёный кружочек
+> - Я не реализовал подсветку выбранного варианта в Query Type, так как не смог определить изменение стилей для "родительского элемента" (class=form__radio-item) по активации input (class=form__radio).
+> - Не смог сделать отображение ошибки (message_error) после нажатия кнопки "submit"
+> - Не смог сделать проверку поля Email на наличиие знака "@", отчего и не смог вывести поле с текстом "Please enter a valid email address"
+> - Не смог сделать всплывающее сообщение об успешной отправке заполненной формы
+> - Не смог сделать стилизацию галочки checkbox (form__agreement).
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+English:
+> I have learned working with tags: form, input, label, textarea and stylization them. For adaptive i have used Flexbox and this have gived me opportunity easy made site for telephone. But i have problems:
+> - Because limited stylization element "input" with type "radio" was diffucult realized functional green circle right on text.
+> - I didn't realize black green outline active option in "fieldset" with class "form__fieldset", because i didn`t can realize editing style for parent element with class "form__radio-item" after choose right "input" with class "form__radio".
+> - I cann't realize showing error after push button "submit"
+> - I cann't realize checking field "email" for availability "@" and because i cann't realise showing error with text "Please enter a valid email address"
+> - I cann't realize message for user about successful result
+> - I cann't realize stylization icon check in checkbox (form__agreement)
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [W3Schools]([https://www.example.com](https://www.w3schools.com/html/html_form_input_types.asp)) - This resource has helped me recall meterials about tag "input", his attribute and has gived me example with all value (Со всеми значениями атрибута type).
+- [MDN]([https://www.example.com](https://developer.mozilla.org/en-US/)) - Good resource and he has helped me recall about tag "textarea" and his attribute.
+- [BEM Methodology] - I have been using this resource for writing names class for my challange
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- GitHub - [krealf](https://github.com/Krealf)
+- Frontend Mentor - [@krealf](https://www.frontendmentor.io/profile/Krealf)
