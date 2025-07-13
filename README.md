@@ -40,11 +40,6 @@ Desktop:
 Mobile:
 <img width="375" height="824" alt="chrome_9zUzzWR80k" src="https://github.com/user-attachments/assets/467699c3-3248-419d-af76-60bde73ca2e4" />
 
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
 ## My process
 
 ### Built with
