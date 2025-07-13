@@ -18,6 +18,7 @@ body {
 
 .form {
     padding: 100px;
+    background-color: #e0f1e7;
 }
 
 .form__inner {
@@ -25,11 +26,14 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 30px;
+    background-color: white;
+    border-radius: 15px;
 }
 
 .form__title {
     margin: 0;
     margin-bottom: 20px;
+    font-weight: 900;
 }
 
 .form__initials {
@@ -37,19 +41,31 @@ body {
     justify-content: space-between;
     gap: 10px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
+
 
 .form__initials-box {
     flex-grow: 1;
 }
 
 .form__input {
-    padding-left: 10px;
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
     display: block;
     height: 30px;
     width: 100%;
     border: 1px solid hsl(186, 15%, 59%);
-    border-radius: 5px;
+    border-radius: 10px;
+    padding: 25px 15px 25px;
+}
+
+.form__input:hover {
+    border-color: hsl(169, 82%, 27%);
+}
+
+.form__input:focus {
+    outline: 1px solid hsl(169, 82%, 27%);
 }
 
 .form__label {
@@ -109,25 +125,39 @@ body {
 }
 
 .form__radio-item {
+    min-height: 50px;
     display: flex;
     border: 1px solid hsl(186, 15%, 59%);
-    border-radius: 5px;
+    border-radius: 10px;
     align-items: center;
     justify-content: flex-start;
     flex-grow: 1;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.form__radio-item:hover {
+    border-color: hsl(169, 82%, 27%);
+}
+
+.form__radio:checked+.form__radio-item {
+    border-color: 0;
+    outline: 0;
+    background-color: black;
 }
 
 .form__radio {
-    margin: 0;
-    padding: 10px;
     cursor: pointer;
     margin: 0 10px 0;
+    width: 20px;
+    height: 20px;
+    accent-color: #0c7d69;
 }
 
 .form__label_radio {
     flex-grow: 1;
     cursor: pointer;
-    padding: 10px 15px 10px 0;
+    padding: 5px 0;
 }
 
 .form__box-message {
@@ -135,18 +165,29 @@ body {
 }
 
 .form__message {
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
     display: block;
     width: 100%;
     resize: none;
     height: 100px;
     border: 1px solid hsl(186, 15%, 59%);
-    border-radius: 5px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.form__message:hover {
+    border-color: hsl(169, 82%, 27%);
+}
+
+.form__message:focus {
+    outline: 1px solid hsl(169, 82%, 27%);
 }
 
 .form__agreement {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .form__checkbox {
@@ -168,6 +209,18 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
+}
+
+.form__submit:hover {
+    background-color: hsl(187, 24%, 22%);
+}
+
+.form__error {
+    font-family: "Karla", sans-serif;
+    color: hsl(0, 66%, 54%);
+    font-size: 14px;
+    display: none;
+    margin-top: 10px;
 }
