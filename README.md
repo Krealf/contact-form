@@ -40,6 +40,12 @@ Desktop:
 Mobile:
 <img width="375" height="824" alt="chrome_9zUzzWR80k" src="https://github.com/user-attachments/assets/467699c3-3248-419d-af76-60bde73ca2e4" />
 
+### Links
+
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/basic-layout-site-with-flexbox-and-stylization-inputs-wwjbgAQsms)
+- Live Site URL: [GitHub IO](https://krealf.github.io/contact-form/)
+
+
 ## My process
 
 ### Built with
