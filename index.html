@@ -17,72 +17,77 @@
 </head>
 
 <body>
-    <section class="form">
-        <div class="container">
-            <div class="form__inner">
-                <form action="#">
-                    <h1 class="form__title">Contact Us</h1>
+    <main>
+        <section class="form">
+            <div class="container">
+                <div class="form__inner">
+                    <form action="#">
+                        <h1 class="form__title">Contact Us</h1>
 
-                    <div class="form__initials">
-                        <div class="form__initials-box form__initials-left-box">
-                            <label for="fname" class="form__label form__label_required">First Name</label>
-                            <input type="text" id="fname" name="fname" class="form__input form__input-fname" required>
-                            <div class="form__error" id="fname-error">This field is required</div>
+                        <div class="form__initials">
+                            <div class="form__initials-box form__initials-left-box">
+                                <label for="fname" class="form__label form__label_required">First Name</label>
+                                <input type="text" id="fname" name="fname" class="form__input form__input-fname"
+                                    required>
+                                <div class="form__error" id="fname-error">This field is required</div>
+                            </div>
+
+                            <div class="form__initials-box form__initials-right-box">
+                                <label for="lname" class="form__label form__label_required">Last Name</label>
+                                <input type="text" id="lname" name="lname" class="form__input form__input-lname"
+                                    required>
+                                <div class="form__error" id="lname-error">This field is required</div>
+                            </div>
+                        </div>
+                        <div class="form__email">
+                            <label for="email" class="form__label form__label_required">Email Address</label>
+                            <input type="email" id="email" name="email" class="form__input form__input-email" required>
+                            <!-- Please enter a valid email address -->
+                            <div class="form__error" id="email-error">This field is required</div>
                         </div>
 
-                        <div class="form__initials-box form__initials-right-box">
-                            <label for="lname" class="form__label form__label_required">Last Name</label>
-                            <input type="text" id="lname" name="lname" class="form__input form__input-lname" required>
-                            <div class="form__error" id="lname-error">This field is required</div>
+                        <fieldset class="form__fieldset">
+                            <legend class="form__legend"><span class="form__legend-text">Query Type</span></legend>
+                            <div class="form__radio-group">
+                                <label class="form__radio-item form__radio-item_left">
+                                    <input class="form__radio" type="radio" name="query_type" id="general_enquiry"
+                                        value="General Enquiry" required>
+                                    <span class="form__label_radio">General
+                                        Enquiry</span>
+                                </label>
+                                <label class="form__radio-item form__radio-item_right">
+                                    <input class="form__radio" type="radio" name="query_type" id="support_request"
+                                        value="Support Request" required>
+                                    <span class="form__label_radio">Support
+                                        Request</span>
+                                </label>
+                            </div>
+                            <div class="form__error" id="query-type-error">Please select a query type</div>
+                        </fieldset>
+                        <div class="form__box-message">
+                            <label class="form__label form__label_required" for="message">Message</label>
+                            <textarea class="form__message" name="message" id="message" required></textarea>
+                            <div class="form__error" id="message-error">This field is required</div>
                         </div>
-                    </div>
-                    <div class="form__email">
-                        <label for="email" class="form__label form__label_required">Email Address</label>
-                        <input type="email" id="email" name="email" class="form__input form__input-email" required>
-                        <!-- Please enter a valid email address -->
-                        <div class="form__error" id="email-error">This field is required</div>
-                    </div>
-
-                    <fieldset class="form__fieldset">
-                        <legend class="form__legend"><span class="form__legend-text">Query Type</span></legend>
-                        <div class="form__radio-group">
-                            <label class="form__radio-item form__radio-item_left">
-                                <input class="form__radio" type="radio" name="query_type" id="general_enquiry"
-                                    val="General Enquiry" required>
-                                <span class="form__label_radio">General
-                                    Enquiry</span>
-                            </label>
-                            <label class="form__radio-item form__radio-item_right">
-                                <input class="form__radio" type="radio" name="query_type" id="support_request"
-                                    val="Support Request" required>
-                                <span class="form__label_radio">Support
-                                    Request</span>
-                            </label>
+                        <div class="form__agreement">
+                            <input class="form__checkbox" type="checkbox" id="agreement" name="agreement" required>
+                            <label class="form__label form__label_required form__label_checkbox" for="agreement">I
+                                consent
+                                to being contacted by
+                                the
+                                team</label>
+                            <div class="form__error" id="agreement-error">To submit this form, please consent to being
+                                contacted</div>
                         </div>
-                        <div class="form__error" id="query-type-error">Please select a query type</div>
-                    </fieldset>
-                    <div class="form__box-message">
-                        <label class="form__label form__label_required" for="message">Message</label>
-                        <textarea class="form__message" name="message" id="message" required></textarea>
-                        <div class="form__error" id="message-error">This field is required</div>
-                    </div>
-                    <div class="form__agreement">
-                        <input class="form__checkbox" type="checkbox" id="agreement" name="agreement" required>
-                        <label class="form__label form__label_required form__label_checkbox" for="agreement">I consent
-                            to being contacted by
-                            the
-                            team</label>
-                        <div class="form__error" id="agreement-error">To submit this form, please consent to being
-                            contacted</div>
-                    </div>
-                    <input class="form__submit" type="submit" value="Submit">
+                        <button class="form__submit" type="button" value="submit"></button>
 
-                    <!-- Message Sent! -->
-                    <!-- Thanks for completing the form. We'll be in touch soon! -->
-                </form>
+                        <!-- Message Sent! -->
+                        <!-- Thanks for completing the form. We'll be in touch soon! -->
+                    </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 </body>
 
 </html>
