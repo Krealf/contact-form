@@ -8,6 +8,7 @@ body {
     color: hsl(187, 24%, 22%);
     margin: 0;
     padding: 0;
+    background-color: #e0f1e7;
 }
 
 .container {
@@ -16,12 +17,11 @@ body {
     padding: 0;
 }
 
-.form {
+.form-section {
     padding: 30px;
-    background-color: #e0f1e7;
 }
 
-.form__inner {
+.form__section__inner {
     max-width: 700px;
     width: 100%;
     margin: 0 auto;
@@ -87,7 +87,7 @@ body {
     right: 0;
 }
 
-.form__email {
+.form__field {
     margin-bottom: 10px;
 }
 
@@ -223,4 +223,10 @@ body {
     font-size: 14px;
     display: none;
     margin-top: 10px;
+}
+
+.form__input:invalid+.form__error,
+.form__message:invalid+.form__error,
+.form__radio:invalid~.form__error {
+    display: block;
 }

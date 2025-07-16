@@ -16,28 +16,25 @@
 
 <body>
     <main>
-        <section class="form">
+        <section class="form-section">
             <div class="container">
-                <div class="form__inner">
-                    <form action="#">
-                        <h1 class="form__title">Contact Us</h1>
-
+                <div class="form__section__inner">
+                    <h1 class="form__section__title">Contact Us</h1>
+                    <form action="#" class="form">
                         <div class="form__initials">
                             <div class="form__initials-box form__initials-left-box">
                                 <label for="fname" class="form__label form__label_required">First Name</label>
-                                <input type="text" id="fname" name="fname" class="form__input form__input-fname"
-                                    required>
+                                <input type="text" id="fname" name="fname" class="form__input" required>
                                 <div class="form__error" id="fname-error">This field is required</div>
                             </div>
 
                             <div class="form__initials-box form__initials-right-box">
                                 <label for="lname" class="form__label form__label_required">Last Name</label>
-                                <input type="text" id="lname" name="lname" class="form__input form__input-lname"
-                                    required>
+                                <input type="text" id="lname" name="lname" class="form__input" required>
                                 <div class="form__error" id="lname-error">This field is required</div>
                             </div>
                         </div>
-                        <div class="form__email">
+                        <div class="form__field">
                             <label for="email" class="form__label form__label_required">Email Address</label>
                             <input type="email" id="email" name="email" class="form__input form__input-email" required>
                             <!-- Please enter a valid email address -->
